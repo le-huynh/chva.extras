@@ -1,0 +1,13 @@
+Package: chva.extras
+Title: Supplementary Tools for Climate and Health Research in VA
+Version: 0.0.0.9000
+Authors@R: 
+    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: A collection of supplementary functions designed to support 
+        climate and health research in VA, including tools for data 
+        manipulation, analysis, and visualization, tailored to handle large datasets. 
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2

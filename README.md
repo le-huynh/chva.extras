@@ -1,0 +1,31 @@
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+# chva.extras
+
+Supplementary Tools for Climate and Health Research in VA
+
+`chva.extras` is a collection of supplementary functions and templates
+designed to support climate and health research in VA, including tools
+for data manipulation, analysis, and visualization, tailored to handle
+large datasets.
+
+## Installation
+
+To get the latest in-development features, install the development
+version from GitHub:
+
+``` r
+if(!requireNamespace("devtools", quietly = TRUE)) {
+ install.packages("devtools")
+}
+devtools::install_github("le-huynh/chva.extras")
+```
+
+### Functions
+
+- `function_name( )`: description
+
+### Templates
+
+- `template_name`: description
