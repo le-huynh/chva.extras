@@ -2,8 +2,13 @@ Package: chva.extras
 Title: Supplementary Tools for Climate and Health Research in VA
 Version: 0.0.0.9000
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
+    person(family = "Le-Huynh",
+           given = "Truc-Ly",
+           role = c("aut", "cre", "cph"),
+           email = "trucly.lehuynh@gmail.com",
+           comment = c(ORCID = "https://orcid.org/0000-0002-5227-2185"))
+Author: Truc-Ly Le-Huynh [aut, cre, cph] (<https://orcid.org/0000-0002-5227-2185>)
+Maintainer: Truc-Ly Le-Huynh <trucly.lehuynh@gmail.com>
 Description: A collection of supplementary functions designed to support 
         climate and health research in VA, including tools for data 
         manipulation, analysis, and visualization, tailored to handle large datasets. 
@@ -13,3 +18,12 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
 URL: https://github.com/le-huynh/chva.extras
 BugReports: https://github.com/le-huynh/chva.extras/issues
+Imports: 
+    arrow,
+    data.table,
+    dplyr,
+    fs,
+    magrittr,
+    purrr,
+    stringr,
+    tibble

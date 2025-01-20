@@ -1,7 +1,14 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# chva.extras
+# chva.extras <img src="man/figures/logo.png" width = "175" height = "200" align="right" />
+
+<!-- badges: start -->
+
+[![R-CMD-check](https://github.com/le-huynh/chva.extras/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/le-huynh/chva.extras/actions/workflows/R-CMD-check.yaml)
+[![Lifecycle:
+stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
+<!-- badges: end -->
 
 Supplementary Tools for Climate and Health Research in VA
 
@@ -24,7 +31,17 @@ devtools::install_github("le-huynh/chva.extras")
 
 ### Functions
 
-- `function_name( )`: description
+- `check_overview( )`: Provide an overview of datasets with the number
+  of rows, columns, and a flag indicating whether the column names
+  across datasets are consistent.
+- `check_unique_value()`: Count the unique values of a specified column.
+- `check_unique_value_overview()`: Check the consistency of unique
+  values within a specified column across multiple datasets.
+- `get_dataset()`: Get full working datasets as a named list of
+  [Dataset](https://arrow.apache.org/docs/r/reference/Dataset.html) R6
+  objects.
+- `get_parquet_arrow()`: Convert multiple files to Parquet format.
+- `get_parquet_by_chunk()`: Convert file to Parquet format by chunks.
 
 ### Templates
 
