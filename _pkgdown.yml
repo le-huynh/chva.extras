@@ -1,0 +1,23 @@
+url: https://le-huynh.github.io/chva.extras/
+template:
+  bootstrap: 5
+
+reference:
+- title: Convert files to Parquet format
+  desc: >
+    Convert original files (e.g., CSV) to Parquet format
+  contents:
+  - get_parquet_arrow
+  - get_parquet_by_chunk
+
+- title: Check data
+  contents:
+  - check_overview
+  - check_unique_value
+  - check_unique_value_overview
+
+- title: Support handy workflow
+  contents:
+  - get_dataset
+
+
