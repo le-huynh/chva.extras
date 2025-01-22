@@ -10,8 +10,10 @@ check_unique_value(data, column_to_check)
 check_unique_value_overview(data, column_to_check)
 }
 \arguments{
-\item{data}{A data frame (for \code{check_unique_value()}) or a list of outputs
-from \code{check_unique_value()} (for \code{check_unique_value_overview()}).}
+\item{data}{For \code{check_unique_value()}, a data frame or an element
+of a list dataset (output from \code{\link[=get_dataset]{get_dataset()}}).
+For \code{check_unique_value_overview()}, a list of outputs
+from \code{check_unique_value()}.}
 
 \item{column_to_check}{A column to check for unique values,
 using \code{column_name} without quotes.}

@@ -2,8 +2,10 @@
 #'
 #' `check_unique_value()` counts the unique values of a specified column.
 #'
-#' @param data A data frame (for `check_unique_value()`) or a list of outputs
-#'      from `check_unique_value()` (for `check_unique_value_overview()`).
+#' @param data For `check_unique_value()`, a data frame or an element
+#'      of a list dataset (output from [chva.extras::get_dataset()]).
+#'      For `check_unique_value_overview()`, a list of outputs
+#'      from `check_unique_value()`.
 #' @param column_to_check A column to check for unique values,
 #'      using `column_name` without quotes.
 #'
