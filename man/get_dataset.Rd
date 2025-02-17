@@ -21,10 +21,6 @@ Get full working datasets as a named list of
 Each dataset is opened from files matching the given pattern, and the names
 of the list elements correspond to the file names.
 }
-\note{
-Ensure that \code{folder_path} does not end with a forward slash (\code{/}) to
-avoid potential issues with file path concatenation.
-}
 \examples{
 \dontrun{
 datasets <- get_dataset(folder_path = "path/to/data_folder", pattern = "Facility")

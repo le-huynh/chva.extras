@@ -37,7 +37,7 @@
 #'   chunk_no = 0:19,
 #'   nrows_to_read = 100000,
 #'   column_names = c("col1", "col2", "col3", "col4"),
-#'   max_rows_per_file = 5000000
+#'   max_rows_per_file = 50000
 #' )
 #' }
 #'

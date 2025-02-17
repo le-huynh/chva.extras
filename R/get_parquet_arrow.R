@@ -36,9 +36,7 @@ get_parquet_arrow <- function(folder_path,
 
         # list all files in the specified directory and filter them by a pattern
         folder_list <- fs::dir_ls(path = folder_path) %>%
-                tibble::as_tibble() %>%
-                dplyr::filter(stringr::str_detect(value, pattern)) %>%
-                dplyr::pull()
+                stringr::str_subset(pattern = pattern)
 
         for (i in seq_along(folder_list)) {
 

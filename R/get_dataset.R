@@ -11,10 +11,6 @@
 #'
 #' @returns A named list of datasets.
 #'
-#' @note
-#' Ensure that `folder_path` does not end with a forward slash (`/`) to
-#' avoid potential issues with file path concatenation.
-#'
 #' @export
 #'
 #' @examples
@@ -26,23 +22,11 @@
 get_dataset <- function(folder_path,
                         pattern){
 
-        folder_list <- fs::dir_ls(path = folder_path) %>%
-                tibble::as_tibble() %>%
-                dplyr::filter(stringr::str_detect(value, pattern)) %>%
-                dplyr::pull()
+        dataset <- fs::dir_ls(path = folder_path) %>%
+                stringr::str_subset(pattern = pattern) %>%
+                purrr::set_names(basename) %>%
+                purrr::map(arrow::open_dataset)
 
-        dataset <- vector("list", length(folder_list))
-        file_name_output <- vector("character", length(folder_list))
-
-        for (i in seq_along(folder_list)) {
-
-                dataset[[i]] <- arrow::open_dataset(folder_list[[i]])
-                file_name_output[[i]] <- stringr::str_split(folder_list[[i]],
-                                                            paste0(folder_path, "/"),
-                                                            simplify = TRUE)[,2]
-        }
-
-        dataset <- purrr::set_names(dataset, file_name_output)
         return(dataset)
 
 }
