@@ -10,14 +10,13 @@ reference:
   - get_parquet_arrow
   - get_parquet_by_chunk
 
-- title: Check data
+- title: Support handy workflow
   contents:
   - check_overview
   - check_unique_value
   - check_unique_value_overview
-
-- title: Support handy workflow
-  contents:
+  - delete_csv
   - get_dataset
+  - recode_values
 
 

@@ -8,7 +8,7 @@ check_overview(folder_path, pattern)
 }
 \arguments{
 \item{folder_path}{A string path to the directory containing sub-directories
-of input Parquet files. The path should not end with a forward slash (\code{/}).}
+of input Parquet files.}
 
 \item{pattern}{A string to filter the sub-directories of input files by names.}
 }
@@ -24,10 +24,6 @@ the column names match.}
 Provide an overview of datasets within a specified directory that match a given pattern.
 Return a summary with the number of rows, columns, and a flag indicating
 whether the column names across datasets are consistent.
-}
-\note{
-Ensure that \code{folder_path} does not end with a forward slash (\code{/}) to
-avoid potential issues with file path concatenation.
 }
 \examples{
 \dontrun{

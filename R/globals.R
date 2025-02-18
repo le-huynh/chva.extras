@@ -1,3 +1,4 @@
 
-utils::globalVariables(c("value"))
+utils::globalVariables(c(":=",
+                         "value", "nval"))
 

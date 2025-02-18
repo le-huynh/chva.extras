@@ -5,7 +5,7 @@
 #' whether the column names across datasets are consistent.
 #'
 #' @param folder_path A string path to the directory containing sub-directories
-#'      of input Parquet files. The path should not end with a forward slash (`/`).
+#'      of input Parquet files.
 #' @param pattern A string to filter the sub-directories of input files by names.
 #'
 #' @returns A tibble summarizing the datasets, with columns:
@@ -14,10 +14,6 @@
 #'   \item{ncol}{The number of columns in each dataset.}
 #'   \item{matched_column_names}{A logical value indicating whether
 #'      the column names match.}
-#'
-#' @note
-#' Ensure that `folder_path` does not end with a forward slash (`/`) to
-#' avoid potential issues with file path concatenation.
 #'
 #' @export
 #'

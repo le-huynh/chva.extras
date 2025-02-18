@@ -6,7 +6,7 @@
 #' of the list elements correspond to the file names.
 #'
 #' @param folder_path A string path to the directory containing sub-directories
-#'      of input Parquet files. The path should not end with a forward slash (`/`).
+#'      of input Parquet files.
 #' @param pattern A string to filter the sub-directories of input files by names.
 #'
 #' @returns A named list of datasets.

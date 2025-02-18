@@ -2,12 +2,20 @@ Package: chva.extras
 Title: Supplementary Tools for Climate and Health Research in VA
 Version: 0.0.0.9000
 Authors@R: 
-    person(family = "Le-Huynh",
-           given = "Truc-Ly",
-           role = c("aut", "cre", "cph"),
-           email = "trucly.lehuynh@gmail.com",
-           comment = c(ORCID = "https://orcid.org/0000-0002-5227-2185"))
-Author: Truc-Ly Le-Huynh [aut, cre, cph] (<https://orcid.org/0000-0002-5227-2185>)
+    c(person(family = "Le-Huynh",
+             given = "Truc-Ly",
+             role = c("aut", "cre", "cph"),
+             email = "trucly.lehuynh@gmail.com",
+             comment = c(ORCID = "https://orcid.org/0000-0002-5227-2185")),
+      person(family = "Davis",
+             given = "Robert",
+             role = c("ctb", "fnd")),
+      person(family = "Novicoff",
+             given = "Wendy",
+             role = c("fnd")),
+      person(family = "DeGuzman",
+             given = "Pam",
+             role = c("fnd")))
 Maintainer: Truc-Ly Le-Huynh <trucly.lehuynh@gmail.com>
 Description: A collection of supplementary functions designed to support 
         climate and health research in VA, including tools for data 
@@ -23,7 +31,9 @@ Imports:
     data.table,
     dplyr,
     fs,
+    lubridate,
     magrittr,
     purrr,
     stringr,
-    tibble
+    tibble,
+    tidyr

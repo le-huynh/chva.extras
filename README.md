@@ -31,7 +31,7 @@ devtools::install_github("le-huynh/chva.extras")
 
 ### Functions
 
-Refer to [Package
+See [Package
 index](https://le-huynh.github.io/chva.extras/reference/index.html) for
 full list of functions.
 
@@ -40,18 +40,16 @@ full list of functions.
 - `get_parquet_arrow()`: Convert multiple files to Parquet format.  
 - `get_parquet_by_chunk()`: Convert file to Parquet format by chunks.
 
-2.  Check data
+2.  Support handy workflow
 
 - `check_overview()`: Provide an overview of datasets.  
-- `check_unique_value()`: Count unique values of a specified column.
-
-3.  Support handy workflow
-
+- `check_unique_value()`: Count unique values of a specified column.  
 - `get_dataset()`: Get full working datasets as a named list of
   [Dataset](https://arrow.apache.org/docs/r/reference/Dataset.html) R6
-  objects.
+  objects.  
+- `recode_values()`: Recode values based on grouping logic.
 
-4.  Compute additional indices used in climate health research
+3.  Compute additional indices used in climate health research
 
 - \[updating\]
 

@@ -8,7 +8,7 @@ get_dataset(folder_path, pattern)
 }
 \arguments{
 \item{folder_path}{A string path to the directory containing sub-directories
-of input Parquet files. The path should not end with a forward slash (\code{/}).}
+of input Parquet files.}
 
 \item{pattern}{A string to filter the sub-directories of input files by names.}
 }
