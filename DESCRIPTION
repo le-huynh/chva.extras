@@ -9,13 +9,13 @@ Authors@R:
              comment = c(ORCID = "https://orcid.org/0000-0002-5227-2185")),
       person(family = "Davis",
              given = "Robert",
-             role = c("ctb", "fnd")),
+             role = c("aut", "fnd")),
       person(family = "Novicoff",
              given = "Wendy",
-             role = c("fnd")),
+             role = c("aut", "fnd")),
       person(family = "DeGuzman",
              given = "Pam",
-             role = c("fnd")))
+             role = c("aut", "fnd")))
 Maintainer: Truc-Ly Le-Huynh <trucly.lehuynh@gmail.com>
 Description: A collection of supplementary functions designed to support 
         climate and health research in VA, including tools for data 
