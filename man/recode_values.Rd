@@ -30,6 +30,8 @@ If \code{var1} has more than two unique \code{var2} values, \code{unknown_catego
 \examples{
 df <- data.frame(ID = c(1, 1, 2, 2, 3, 3, 3),
                  Status = c("Male", "Unknown", "Female", "Female", "Male", "Female", "Unknown"))
+df
+
 recode_values(df, var1 = "ID", var2 = "Status", unknown_category = "Unknown")
 
 }
