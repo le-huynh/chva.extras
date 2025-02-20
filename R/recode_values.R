@@ -19,18 +19,16 @@
 #'
 #' @examples
 #' df <- data.frame(ID = c(1, 1, 2, 2, 3, 3, 3),
-#'                  Status = c("Male", "Unknown", "Female", "Female", "Male", "Female", "Unknown"))
+#'                  Gender = c("Male", "Unknown", "Female", "Female", "Male", "Female", "Unknown"))
 #' df
 #'
-#' recode_values(df, var1 = "ID", var2 = "Status", unknown_category = "Unknown")
+#' recode_values(df, var1 = "ID", var2 = "Gender", unknown_category = "Unknown")
 #'
 
 recode_values<- function(data,
                          var1,
                          var2,
                          unknown_category){
-
-        var_gr <- as.name(var1)
 
         df1 <- data %>%
                 dplyr::select({{var1}}, {{var2}}) %>%
@@ -39,9 +37,7 @@ recode_values<- function(data,
 
         df2 <- df1 %>%
                 dplyr::rename(col2 = {{var2}}) %>%
-                dplyr::group_by({{var_gr}}) %>%
-                tidyr::nest() %>%
-                dplyr::ungroup() %>%
+                tidyr::nest(.by = {{var1}}) %>%
                 dplyr::mutate(nval = purrr::map_dbl(data, nrow))
 
         # nval == 1
