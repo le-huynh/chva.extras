@@ -8,6 +8,7 @@
 [![R-CMD-check](https://github.com/le-huynh/chva.extras/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/le-huynh/chva.extras/actions/workflows/R-CMD-check.yaml)
 [![Lifecycle:
 stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
+[![DOI](https://zenodo.org/badge/917932837.svg)](https://doi.org/10.5281/zenodo.14910966)
 <!-- badges: end -->
 
 Supplementary Tools for Climate and Health Research in VA
@@ -28,6 +29,9 @@ if(!requireNamespace("devtools", quietly = TRUE)) {
 }
 devtools::install_github("le-huynh/chva.extras")
 ```
+
+This package is also accessible for download via Zenodo with the DOI
+[10.5281/zenodo.14910967](https://doi.org/10.5281/zenodo.14910966).
 
 ### Functions
 
