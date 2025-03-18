@@ -17,6 +17,8 @@ reference:
   - check_unique_value_overview
   - delete_csv
   - get_dataset
+  - get_weather_obs
+  - interpolate_na
   - recode_values
 
 
