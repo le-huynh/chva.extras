@@ -10,7 +10,9 @@
 <url><loc>https://le-huynh.github.io/chva.extras/reference/get_dataset.html</loc></url>
 <url><loc>https://le-huynh.github.io/chva.extras/reference/get_parquet_arrow.html</loc></url>
 <url><loc>https://le-huynh.github.io/chva.extras/reference/get_parquet_by_chunk.html</loc></url>
+<url><loc>https://le-huynh.github.io/chva.extras/reference/get_weather_obs.html</loc></url>
 <url><loc>https://le-huynh.github.io/chva.extras/reference/index.html</loc></url>
+<url><loc>https://le-huynh.github.io/chva.extras/reference/interpolate_na.html</loc></url>
 <url><loc>https://le-huynh.github.io/chva.extras/reference/pipe.html</loc></url>
 <url><loc>https://le-huynh.github.io/chva.extras/reference/recode_values.html</loc></url>
 </urlset>
