@@ -16,6 +16,7 @@ reference:
   - check_unique_value
   - check_unique_value_overview
   - delete_csv
+  - get_counts_by_category
   - get_dataset
   - get_weather_obs
   - interpolate_na
