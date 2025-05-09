@@ -42,6 +42,8 @@ Output can be limited to points strictly within the boundary or
 include all masked points overlapping the boundary extent.
 }
 \examples{
+library(sf)
+
 richmond_msa <- load_era5_temperature()
 va_county <- sf_va_county
 

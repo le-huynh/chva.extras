@@ -27,6 +27,8 @@
 #' @export
 #'
 #' @examples
+#' library(sf)
+#'
 #' richmond_msa <- load_era5_temperature()
 #' va_county <- sf_va_county
 #'
@@ -45,7 +47,6 @@ get_grid_points <- function(gridded_data,
                             county_name,
                             output = c("within", "masked")){
 
-        requireNamespace("sf", quietly = TRUE)
         county_sf <- sf_county %>% dplyr::filter(county == county_name)
 
         # match CRS
