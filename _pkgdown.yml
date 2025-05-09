@@ -18,8 +18,10 @@ reference:
   - delete_csv
   - get_counts_by_category
   - get_dataset
+  - get_grid_points
   - get_weather_obs
   - interpolate_na
   - recode_values
+  - reshape_raster_timeseries
 
 
