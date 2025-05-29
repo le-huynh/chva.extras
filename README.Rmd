@@ -55,9 +55,18 @@ See [Package index](https://le-huynh.github.io/chva.extras/reference/index.html)
 - `get_dataset()`: Get full working datasets as a named list of [Dataset](https://arrow.apache.org/docs/r/reference/Dataset.html) R6 objects.  
 - `recode_values()`: Recode values based on grouping logic.  
 
-3. Compute additional indices used in climate health research
-- [updating]
-
+3. Compute indices used in climate health research
+- Humidity variables: 
+`cal_absolute_humidity()`, 
+`cal_dewpoint_temperature()`, 
+`cal_mixing_ratio()`, 
+`cal_relative_humidity()`, 
+`cal_specific_humidity()`.  
+- Comfort indices: 
+`cal_apparent_temperature()`, 
+`cal_humidex()`, 
+`cal_temperature_humidity_index()`.  
+- `cal_saturation_vapor_pressure()`  
 
 ### Templates
 - [updating]

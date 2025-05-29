@@ -18,8 +18,9 @@
 #' @export
 #'
 #' @references
-#' Davis, R.E., Himmel, O., Sims, P.K. et al. Mortality and diurnal temperature
-#' range in Virginia. Int J Biometeorol (2025).
+#' Davis, Robert E., Owen Himmel, Parker K. Sims, and Christopher M. Fuhrmann.
+#' “Mortality and Diurnal Temperature Range in Virginia.”
+#' International Journal of Biometeorology, January 30, 2025.
 #' [https://doi.org/10.1007/s00484-025-02850-6](https://doi.org/10.1007/s00484-025-02850-6)
 #'
 #' @examples

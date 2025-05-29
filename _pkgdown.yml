@@ -24,4 +24,21 @@ reference:
   - recode_values
   - reshape_raster_timeseries
 
+- title: Compute climate or health indices
+  contents:
+  - cal_absolute_humidity
+  - cal_apparent_temperature
+  - cal_dewpoint_temperature
+  - cal_humidex
+  - cal_mixing_ratio
+  - cal_relative_humidity
+  - cal_saturation_vapor_pressure
+  - cal_specific_humidity
+  - cal_temperature_humidity_index
+
+- title: Sample datasets
+  contents:
+  - load_era5_temperature
+  - sf_va_county
+
 
