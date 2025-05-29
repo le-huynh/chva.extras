@@ -6,12 +6,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>Supplementary Tools for Climate and Health Research in VA • chva.extras</title>
-<!-- favicons --><link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-<link rel="apple-touch-icon" type="image/png" sizes="180x180" href="apple-touch-icon.png">
-<link rel="apple-touch-icon" type="image/png" sizes="120x120" href="apple-touch-icon-120x120.png">
-<link rel="apple-touch-icon" type="image/png" sizes="76x76" href="apple-touch-icon-76x76.png">
-<link rel="apple-touch-icon" type="image/png" sizes="60x60" href="apple-touch-icon-60x60.png">
+<!-- favicons --><link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="”image/svg+xml”" href="favicon.svg">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" sizes="any" href="favicon.ico">
+<link rel="manifest" href="site.webmanifest">
 <script src="deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="deps/bootstrap-5.3.1/bootstrap.min.css" rel="stylesheet">
 <script src="deps/bootstrap-5.3.1/bootstrap.bundle.min.js"></script><link href="deps/font-awesome-6.5.2/css/all.min.css" rel="stylesheet">
@@ -102,10 +101,14 @@
 <code><a href="reference/recode_values.html">recode_values()</a></code>: Recode values based on grouping logic.</li>
 </ul>
 <ol start="3" style="list-style-type: decimal">
-<li>Compute additional indices used in climate health research</li>
+<li>Compute indices used in climate health research</li>
 </ol>
 <ul>
-<li>[updating]</li>
+<li>Humidity variables: <code><a href="reference/cal_absolute_humidity.html">cal_absolute_humidity()</a></code>, <code><a href="reference/cal_dewpoint_temperature.html">cal_dewpoint_temperature()</a></code>, <code><a href="reference/cal_mixing_ratio.html">cal_mixing_ratio()</a></code>, <code><a href="reference/cal_relative_humidity.html">cal_relative_humidity()</a></code>, <code><a href="reference/cal_specific_humidity.html">cal_specific_humidity()</a></code>.<br>
+</li>
+<li>Comfort indices: <code><a href="reference/cal_apparent_temperature.html">cal_apparent_temperature()</a></code>, <code><a href="reference/cal_humidex.html">cal_humidex()</a></code>, <code><a href="reference/cal_temperature_humidity_index.html">cal_temperature_humidity_index()</a></code>.<br>
+</li>
+<li><code><a href="reference/cal_saturation_vapor_pressure.html">cal_saturation_vapor_pressure()</a></code></li>
 </ul>
 </div>
 <div class="section level3">
@@ -144,10 +147,10 @@
 <div class="developers">
 <h2 data-toc-skip>Developers</h2>
 <ul class="list-unstyled">
-<li>Truc-Ly Le-Huynh <br><small class="roles"> Author, maintainer, copyright holder </small> <a href="https://orcid.org/https://orcid.org/0000-0002-5227-2185" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
-<li>Robert Davis <br><small class="roles"> Author </small>  </li>
-<li>Wendy Novicoff <br><small class="roles"> Author </small>  </li>
-<li>Pam DeGuzman <br><small class="roles"> Author </small>  </li>
+<li>Truc-Ly Le-Huynh <br><small class="roles"> Author, maintainer, copyright holder </small> <a href="https://orcid.org/https://orcid.org/0000-0002-5227-2185" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a>  </li>
+<li>Robert Davis <br><small class="roles"> Author </small>   </li>
+<li>Wendy Novicoff <br><small class="roles"> Author </small>   </li>
+<li>Pam DeGuzman <br><small class="roles"> Author </small>   </li>
 </ul>
 </div>
 
@@ -169,7 +172,7 @@
 </div>
 
 <div class="pkgdown-footer-right">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.1.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.1.3.</p>
 </div>
 
     </footer>
