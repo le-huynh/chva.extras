@@ -30,14 +30,15 @@ It is calculated using the formula:
 \deqn{\rho_v = \frac{e}{R_v \cdot T}}
 
 where \eqn{e} is vapor pressure (Pa), \eqn{T} is air temperature (Kelvin),
-and \eqn{R_v} is the specific gas constant for moist air (487 J·kg⁻¹·K⁻¹).
+and \eqn{R_v} is the specific gas constant for moist air (461.5 J·kg⁻¹·K⁻¹).
 
 The temperature input is converted to Kelvin based on the provided \code{t_unit}
 before calculation.
 }
 \examples{
-cal_absolute_humidity(e = 1200, t = 25, t_unit = "celsius")
-cal_absolute_humidity(e = 1200, t = 298.15, t_unit = "kelvin")
+cal_absolute_humidity(e = 1000, t = 20, t_unit = "celsius")
+cal_absolute_humidity(e = 1000, t = 68, t_unit = "fahrenheit")
+cal_absolute_humidity(e = 1500, t = 298.15, t_unit = "kelvin")
 
 }
 \references{
