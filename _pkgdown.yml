@@ -35,6 +35,11 @@ reference:
   - cal_saturation_vapor_pressure
   - cal_specific_humidity
   - cal_temperature_humidity_index
+  - cal_wet_bulb_temperature
+
+- title: Visualization
+  contents:
+  - plot_contour_dlnm
 
 - title: Sample datasets
   contents:

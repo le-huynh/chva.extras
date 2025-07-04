@@ -62,6 +62,11 @@ full list of functions.
   `cal_temperature_humidity_index()`.  
 - `cal_saturation_vapor_pressure()`
 
+4.  Support visualization
+
+- `plot_contour_dlnm()`: Generate a filled contour plot for DLNM output
+  with custom color levels.
+
 ### Templates
 
 - \[updating\]
