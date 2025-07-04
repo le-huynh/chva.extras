@@ -13,6 +13,7 @@
 <url><loc>https://le-huynh.github.io/chva.extras/reference/cal_saturation_vapor_pressure.html</loc></url>
 <url><loc>https://le-huynh.github.io/chva.extras/reference/cal_specific_humidity.html</loc></url>
 <url><loc>https://le-huynh.github.io/chva.extras/reference/cal_temperature_humidity_index.html</loc></url>
+<url><loc>https://le-huynh.github.io/chva.extras/reference/cal_wet_bulb_temperature.html</loc></url>
 <url><loc>https://le-huynh.github.io/chva.extras/reference/check_overview.html</loc></url>
 <url><loc>https://le-huynh.github.io/chva.extras/reference/check_unique_value.html</loc></url>
 <url><loc>https://le-huynh.github.io/chva.extras/reference/delete_csv.html</loc></url>
@@ -26,6 +27,7 @@
 <url><loc>https://le-huynh.github.io/chva.extras/reference/interpolate_na.html</loc></url>
 <url><loc>https://le-huynh.github.io/chva.extras/reference/load_era5_temperature.html</loc></url>
 <url><loc>https://le-huynh.github.io/chva.extras/reference/pipe.html</loc></url>
+<url><loc>https://le-huynh.github.io/chva.extras/reference/plot_contour_dlnm.html</loc></url>
 <url><loc>https://le-huynh.github.io/chva.extras/reference/recode_values.html</loc></url>
 <url><loc>https://le-huynh.github.io/chva.extras/reference/reshape_raster_timeseries.html</loc></url>
 <url><loc>https://le-huynh.github.io/chva.extras/reference/sf_va_county.html</loc></url>

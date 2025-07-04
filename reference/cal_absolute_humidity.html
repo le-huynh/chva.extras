@@ -72,7 +72,7 @@ the mass of moisture per total volume of air.
 It is calculated using the formula:</p>
 <p>$$\rho_v = \frac{e}{R_v \cdot T}$$</p>
 <p>where \(e\) is vapor pressure (Pa), \(T\) is air temperature (Kelvin),
-and \(R_v\) is the specific gas constant for moist air (487 J·kg⁻¹·K⁻¹).</p>
+and \(R_v\) is the specific gas constant for moist air (461.5 J·kg⁻¹·K⁻¹).</p>
 <p>The temperature input is converted to Kelvin based on the provided <code>t_unit</code>
 before calculation.</p>
     </div>
@@ -86,10 +86,12 @@ Environmental Research 144 (January 2016): 106–16.
 
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu">cal_absolute_humidity</span><span class="op">(</span>e <span class="op">=</span> <span class="fl">1200</span>, t <span class="op">=</span> <span class="fl">25</span>, t_unit <span class="op">=</span> <span class="st">"celsius"</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 0.008264517</span>
-<span class="r-in"><span><span class="fu">cal_absolute_humidity</span><span class="op">(</span>e <span class="op">=</span> <span class="fl">1200</span>, t <span class="op">=</span> <span class="fl">298.15</span>, t_unit <span class="op">=</span> <span class="st">"kelvin"</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 0.008264517</span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu">cal_absolute_humidity</span><span class="op">(</span>e <span class="op">=</span> <span class="fl">1000</span>, t <span class="op">=</span> <span class="fl">20</span>, t_unit <span class="op">=</span> <span class="st">"celsius"</span><span class="op">)</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 0.007391599</span>
+<span class="r-in"><span><span class="fu">cal_absolute_humidity</span><span class="op">(</span>e <span class="op">=</span> <span class="fl">1000</span>, t <span class="op">=</span> <span class="fl">68</span>, t_unit <span class="op">=</span> <span class="st">"fahrenheit"</span><span class="op">)</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 0.007391599</span>
+<span class="r-in"><span><span class="fu">cal_absolute_humidity</span><span class="op">(</span>e <span class="op">=</span> <span class="fl">1500</span>, t <span class="op">=</span> <span class="fl">298.15</span>, t_unit <span class="op">=</span> <span class="st">"kelvin"</span><span class="op">)</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 0.01090146</span>
 <span class="r-in"><span></span></span>
 </code></pre></div>
     </div>
