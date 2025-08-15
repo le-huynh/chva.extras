@@ -2,12 +2,13 @@
 % Please edit documentation in R/get_grid_points.R
 \name{get_grid_points}
 \alias{get_grid_points}
-\title{Extract grid points within a specific county boundary}
+\title{Extract spatial grid points within a specified boundary}
 \usage{
 get_grid_points(
   gridded_data,
-  sf_county,
-  county_name,
+  sf_boundary,
+  boundary_name,
+  boundary_col_name,
   output = c("within", "masked")
 )
 }
@@ -15,13 +16,18 @@ get_grid_points(
 \item{gridded_data}{A \code{SpatRaster} object containing gridded time series data
 (e.g., temperature).}
 
-\item{sf_county}{A \code{sf} object containing county boundary.
+\item{sf_boundary}{An \code{sf} object containing the boundaries of interest.
+This object must contain the boundary specified by \code{boundary_name}
+in the column identified by \code{boundary_col_name}.
 For Virginia, the \link{sf_va_county} dataset provided in this package
 may be used.}
 
-\item{county_name}{Character string.
-Name of the county or independent city to extract.
-Must match an entry in the \code{county} column of \code{sf_county}.}
+\item{boundary_name}{Character string.
+Name of the boundary to extract.
+Must match an entry in the \code{boundary_col_name} column of \code{sf_boundary}.}
+
+\item{boundary_col_name}{Name of the column in \code{sf_boundary} that contains
+\code{boundary_name}.}
 
 \item{output}{Character string indicating the type of output.
 \code{"within"} (default) returns only grid points strictly within the boundary,
@@ -37,8 +43,9 @@ the masked raster (may include edge pixels).
 }
 \description{
 Extract spatial grid points from a gridded \code{SpatRaster} object that fall
-within the boundary of a specified county.
-Output can be limited to points strictly within the boundary or
+within the boundary of a specified spatial object (e.g., county, city,
+ZIP code, etc.).
+The output can be limited to points strictly within the boundary or
 include all masked points overlapping the boundary extent.
 }
 \examples{
@@ -48,12 +55,14 @@ richmond_msa <- load_era5_temperature()
 va_county <- sf_va_county
 
 masked_output <- get_grid_points(gridded_data = richmond_msa,
-                                 sf_county = va_county,
-                                 county_name = "Amelia County",
+                                 sf_boundary = va_county,
+                                 boundary_name = "Amelia County",
+                                 boundary_col_name = county,
                                  output = "masked")
 
 within_output <- get_grid_points(gridded_data = richmond_msa,
-                                 sf_county = va_county,
-                                 county_name = "Amelia County",
+                                 sf_boundary = va_county,
+                                 boundary_name = "Amelia County",
+                                 boundary_col_name = county,
                                  output = "within")
 }

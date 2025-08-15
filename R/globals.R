@@ -4,5 +4,6 @@ utils::globalVariables(c(":=", "n",
                          "hour", "minute", "time_diff", "timestamp",
                          "approx",
                          "x", "y", "timeUTC", "timeET", "time",
-                         ".", "county"))
+                         ".", "county",
+                         "within_val"))
 

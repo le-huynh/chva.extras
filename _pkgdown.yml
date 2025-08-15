@@ -1,3 +1,10 @@
+authors:
+  footer:
+    roles: [cre]
+    text: "Developed by"
+  sidebar:
+    roles: [aut, sad, fnd]
+
 url: https://le-huynh.github.io/chva.extras/
 template:
   bootstrap: 5
