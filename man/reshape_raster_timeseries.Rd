@@ -4,10 +4,12 @@
 \alias{reshape_raster_timeseries}
 \title{Reshape raster to dataframe}
 \usage{
-reshape_raster_timeseries(data)
+reshape_raster_timeseries(data, ...)
 }
 \arguments{
 \item{data}{SpatRaster}
+
+\item{...}{Passed to \code{\link[terra:as.data.frame]{terra::as.data.frame()}}}
 }
 \value{
 A tibble with columns:

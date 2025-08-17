@@ -5,6 +5,7 @@
 #' UTC and Eastern Time.
 #'
 #' @param data SpatRaster
+#' @param ... Passed to [terra::as.data.frame()]
 #'
 #' @returns A tibble with columns:
 #'   - `x`, `y`: Spatial coordinates
@@ -18,12 +19,12 @@
 #' r <- load_era5_temperature()
 #' reshape_raster_timeseries(r)
 
-reshape_raster_timeseries <- function(data){
+reshape_raster_timeseries <- function(data, ...){
 
         res <- data %>%
                 terra::as.data.frame(xy = TRUE,
                                      time = TRUE,
-                                     na.rm = TRUE) %>%
+                                     ...) %>%
                 tidyr::pivot_longer(cols = c(-x, -y),
                                     names_to = "timeUTC",
                                     values_to = "value") %>%
