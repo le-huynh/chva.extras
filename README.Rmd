@@ -71,6 +71,8 @@ See [Package index](https://le-huynh.github.io/chva.extras/reference/index.html)
 4. Support visualization
 - `plot_contour_dlnm()`: Generate a filled contour plot for DLNM output with custom color levels.  
 
-### Templates
-- [updating]
+## Acknowledgements
+This R package was produced with support from the [UVA Environmental Institute](https://environment.virginia.edu/) 
+through the [Strategic Investment Fund](https://sif.virginia.edu/).
+
 

@@ -67,6 +67,8 @@ full list of functions.
 - `plot_contour_dlnm()`: Generate a filled contour plot for DLNM output
   with custom color levels.
 
-### Templates
+## Acknowledgements
 
-- \[updating\]
+This R package was produced with support from the [UVA Environmental
+Institute](https://environment.virginia.edu/) through the [Strategic
+Investment Fund](https://sif.virginia.edu/).
