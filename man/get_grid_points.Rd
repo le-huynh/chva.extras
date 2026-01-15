@@ -4,13 +4,7 @@
 \alias{get_grid_points}
 \title{Extract spatial grid points within a specified boundary}
 \usage{
-get_grid_points(
-  gridded_data,
-  sf_boundary,
-  boundary_name,
-  boundary_col_name,
-  output = c("within", "masked")
-)
+get_grid_points(gridded_data, sf_boundary, boundary_name, boundary_col_name)
 }
 \arguments{
 \item{gridded_data}{A \code{SpatRaster} object containing gridded time series data
@@ -28,25 +22,14 @@ Must match an entry in the \code{boundary_col_name} column of \code{sf_boundary}
 
 \item{boundary_col_name}{Name of the column in \code{sf_boundary} that contains
 \code{boundary_name}.}
-
-\item{output}{Character string indicating the type of output.
-\code{"within"} (default) returns only grid points strictly within the boundary,
-\code{"masked"} returns all points from the masked raster (may include edge pixels).}
 }
 \value{
-\itemize{
-\item \code{output = "within"}: A tibble of grid points strictly within
-the specified boundary.
-\item \code{output = "masked"}: A \code{sf} object of all points from
-the masked raster (may include edge pixels).
-}
+A \code{sf} object of all points from the masked raster (may include edge pixels).
 }
 \description{
-Extract spatial grid points from a gridded \code{SpatRaster} object that fall
-within the boundary of a specified spatial object (e.g., county, city,
-ZIP code, etc.).
-The output can be limited to points strictly within the boundary or
-include all masked points overlapping the boundary extent.
+Extract spatial grid points from a gridded \code{SpatRaster} object that
+lie within or intersect the boundary of a specified spatial object
+(e.g., county, city, ZIP code, etc.).
 }
 \examples{
 library(sf)
@@ -57,12 +40,6 @@ va_county <- sf_va_county
 masked_output <- get_grid_points(gridded_data = richmond_msa,
                                  sf_boundary = va_county,
                                  boundary_name = "Amelia County",
-                                 boundary_col_name = county,
-                                 output = "masked")
-
-within_output <- get_grid_points(gridded_data = richmond_msa,
-                                 sf_boundary = va_county,
-                                 boundary_name = "Amelia County",
-                                 boundary_col_name = county,
-                                 output = "within")
+                                 boundary_col_name = county)
+masked_output
 }
