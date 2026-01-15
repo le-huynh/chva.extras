@@ -1,20 +1,13 @@
 # Extract spatial grid points within a specified boundary
 
-Extract spatial grid points from a gridded `SpatRaster` object that fall
-within the boundary of a specified spatial object (e.g., county, city,
-ZIP code, etc.). The output can be limited to points strictly within the
-boundary or include all masked points overlapping the boundary extent.
+Extract spatial grid points from a gridded `SpatRaster` object that lie
+within or intersect the boundary of a specified spatial object (e.g.,
+county, city, ZIP code, etc.).
 
 ## Usage
 
 ``` r
-get_grid_points(
-  gridded_data,
-  sf_boundary,
-  boundary_name,
-  boundary_col_name,
-  output = c("within", "masked")
-)
+get_grid_points(gridded_data, sf_boundary, boundary_name, boundary_col_name)
 ```
 
 ## Arguments
@@ -41,19 +34,10 @@ get_grid_points(
 
   Name of the column in `sf_boundary` that contains `boundary_name`.
 
-- output:
-
-  Character string indicating the type of output. `"within"` (default)
-  returns only grid points strictly within the boundary, `"masked"`
-  returns all points from the masked raster (may include edge pixels).
-
 ## Value
 
-- `output = "within"`: A tibble of grid points strictly within the
-  specified boundary.
-
-- `output = "masked"`: A `sf` object of all points from the masked
-  raster (may include edge pixels).
+A `sf` object of all points from the masked raster (may include edge
+pixels).
 
 ## Examples
 
@@ -67,18 +51,28 @@ va_county <- sf_va_county
 masked_output <- get_grid_points(gridded_data = richmond_msa,
                                  sf_boundary = va_county,
                                  boundary_name = "Amelia County",
-                                 boundary_col_name = county,
-                                 output = "masked")
+                                 boundary_col_name = county)
 #> Warning: Expected 2 pieces. Missing pieces filled with `NA` in 45 rows [21, 45, 69, 93,
 #> 117, 141, 165, 189, 213, 237, 261, 285, 309, 333, 357, 381, 405, 429, 453, 477,
 #> ...].
-
-within_output <- get_grid_points(gridded_data = richmond_msa,
-                                 sf_boundary = va_county,
-                                 boundary_name = "Amelia County",
-                                 boundary_col_name = county,
-                                 output = "within")
-#> Warning: Expected 2 pieces. Missing pieces filled with `NA` in 45 rows [21, 45, 69, 93,
-#> 117, 141, 165, 189, 213, 237, 261, 285, 309, 333, 357, 381, 405, 429, 453, 477,
-#> ...].
+masked_output
+#> Simple feature collection with 1080 features and 3 fields
+#> Geometry type: POINT
+#> Dimension:     XY
+#> Bounding box:  xmin: -78.235 ymin: 37.208 xmax: -77.735 ymax: 37.408
+#> Geodetic CRS:  WGS 84
+#> # A tibble: 1,080 × 4
+#>    timeUTC             timeET              value         geometry
+#>  * <chr>               <dttm>              <dbl>      <POINT [°]>
+#>  1 2017-05-14 04:00:00 2017-05-14 00:00:00  285. (-78.235 37.408)
+#>  2 2017-05-14 05:00:00 2017-05-14 01:00:00  284. (-78.235 37.408)
+#>  3 2017-05-14 06:00:00 2017-05-14 02:00:00  283. (-78.235 37.408)
+#>  4 2017-05-14 07:00:00 2017-05-14 03:00:00  283. (-78.235 37.408)
+#>  5 2017-05-14 08:00:00 2017-05-14 04:00:00  283. (-78.235 37.408)
+#>  6 2017-05-14 09:00:00 2017-05-14 05:00:00  283. (-78.235 37.408)
+#>  7 2017-05-14 10:00:00 2017-05-14 06:00:00  283. (-78.235 37.408)
+#>  8 2017-05-14 11:00:00 2017-05-14 07:00:00  284. (-78.235 37.408)
+#>  9 2017-05-14 12:00:00 2017-05-14 08:00:00  287. (-78.235 37.408)
+#> 10 2017-05-14 13:00:00 2017-05-14 09:00:00  290. (-78.235 37.408)
+#> # ℹ 1,070 more rows
 ```
