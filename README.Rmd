@@ -19,15 +19,19 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/le-huynh/chva.extras/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/le-huynh/chva.extras/actions/workflows/R-CMD-check.yaml)
 [![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
-[![DOI](https://zenodo.org/badge/917932837.svg)](https://doi.org/10.5281/zenodo.14910966)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14910967.svg)](https://doi.org/10.5281/zenodo.14910967)
 <!-- badges: end -->
 
-
-Supplementary Tools for Climate and Health Research in VA  
+### Supplementary Tools for Climate and Health Research in VA  
 
 `chva.extras` is a collection of supplementary functions and templates designed 
 to support climate and health research in VA, including tools for data manipulation, 
 analysis, and visualization, tailored to handle large datasets.  
+
+Citation:  
+```
+Le-Huynh, T.-L., Davis, R., Novicoff, W., & DeGuzman, P. (2025). chva.extras v0.1.0: Supplementary Tools for Climate and Health Research in Virginia (v0.1.0). Zenodo. https://doi.org/10.5281/zenodo.14910967
+```
 
 ## Installation
 
@@ -40,7 +44,7 @@ if(!requireNamespace("devtools", quietly = TRUE)) {
 devtools::install_github("le-huynh/chva.extras")
 ```
 
-This package is also accessible for download via Zenodo with the DOI [10.5281/zenodo.14910967](https://doi.org/10.5281/zenodo.14910966).
+This package is also accessible for download via Zenodo DOI [10.5281/zenodo.14910967](https://doi.org/10.5281/zenodo.14910966).
 
 ### Functions
 See [Package index](https://le-huynh.github.io/chva.extras/reference/index.html) for full list of functions.  
