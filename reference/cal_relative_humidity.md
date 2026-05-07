@@ -56,6 +56,7 @@ Environmental Research 144 (January 2016): 106–16.
 ## Examples
 
 ``` r
+
 # Using vapor pressure (in hPa)
 cal_relative_humidity(e = 10, es = 23.4)
 #> [1] 42.73504

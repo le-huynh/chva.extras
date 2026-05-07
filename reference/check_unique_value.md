@@ -43,6 +43,7 @@ check_unique_value_overview(data, column_to_check)
 ## Examples
 
 ``` r
+
 list_mtcars <- list(data1 = mtcars, data2 = mtcars, data3 = mtcars)
 
 res_list <- list_mtcars %>%

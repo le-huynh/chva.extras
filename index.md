@@ -1,11 +1,17 @@
 # chva.extras
 
-Supplementary Tools for Climate and Health Research in VA
+### Supplementary Tools for Climate and Health Research in VA
 
 `chva.extras` is a collection of supplementary functions and templates
 designed to support climate and health research in VA, including tools
 for data manipulation, analysis, and visualization, tailored to handle
 large datasets.
+
+Citation:
+
+``` R
+Le-Huynh, T.-L., Davis, R., Novicoff, W., & DeGuzman, P. (2025). chva.extras v0.1.0: Supplementary Tools for Climate and Health Research in Virginia (v0.1.0). Zenodo. https://doi.org/10.5281/zenodo.14910967
+```
 
 ## Installation
 
@@ -13,13 +19,14 @@ To get the latest in-development features, install the development
 version from GitHub:
 
 ``` r
+
 if(!requireNamespace("devtools", quietly = TRUE)) {
  install.packages("devtools")
 }
 devtools::install_github("le-huynh/chva.extras")
 ```
 
-This package is also accessible for download via Zenodo with the DOI
+This package is also accessible for download via Zenodo DOI
 [10.5281/zenodo.14910967](https://doi.org/10.5281/zenodo.14910966).
 
 ### Functions

@@ -37,6 +37,7 @@ A tibble in wide format with counts of each category per group.
 ## Examples
 
 ``` r
+
 df <- data.frame(
   Incurred_Date = as.Date(c('2021-01-01', '2021-01-01', '2021-01-02')),
   Status = c("Open", "Closed", "Open")
