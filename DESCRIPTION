@@ -1,6 +1,6 @@
 Package: chva.extras
 Title: Supplementary Tools for Climate and Health Research in VA
-Version: 0.0.0.9000
+Version: 0.1.1
 Authors@R: 
     c(person(family = "Le-Huynh",
              given = "Truc-Ly",

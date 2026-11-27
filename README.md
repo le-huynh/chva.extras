@@ -8,7 +8,7 @@
 [![R-CMD-check](https://github.com/le-huynh/chva.extras/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/le-huynh/chva.extras/actions/workflows/R-CMD-check.yaml)
 [![Lifecycle:
 stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14910967.svg)](https://doi.org/10.5281/zenodo.14910967)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14910966.svg)](https://doi.org/10.5281/zenodo.14910966)
 <!-- badges: end -->
 
 ### Supplementary Tools for Climate and Health Research in VA
@@ -20,7 +20,10 @@ large datasets.
 
 Citation:
 
-    Le-Huynh, T.-L., Davis, R., Novicoff, W., & DeGuzman, P. (2025). chva.extras v0.1.0: Supplementary Tools for Climate and Health Research in Virginia (v0.1.0). Zenodo. https://doi.org/10.5281/zenodo.14910967
+> Le-Huynh, T.-L., Davis, R. E., Novicoff, W. M., & DeGuzman, P. B.
+> (2025). chva.extras: Supplementary Tools for Climate and Health
+> Research in Virginia. Zenodo.
+> <https://doi.org/10.5281/zenodo.14910966>
 
 ## Installation
 
@@ -35,7 +38,7 @@ devtools::install_github("le-huynh/chva.extras")
 ```
 
 This package is also accessible for download via Zenodo DOI
-[10.5281/zenodo.14910967](https://doi.org/10.5281/zenodo.14910966).
+[10.5281/zenodo.14910966](https://doi.org/10.5281/zenodo.14910966).
 
 ### Functions
 
@@ -43,27 +46,27 @@ See [Package
 index](https://le-huynh.github.io/chva.extras/reference/index.html) for
 full list of functions.
 
-1.  Convert files to Parquet format  
+1.  Convert files to Parquet format\
 
-- `get_parquet_arrow()`: Convert multiple files to Parquet format.  
+- `get_parquet_arrow()`: Convert multiple files to Parquet format.\
 - `get_parquet_by_chunk()`: Convert file to Parquet format by chunks.
 
 2.  Support handy workflow
 
-- `check_overview()`: Provide an overview of datasets.  
-- `check_unique_value()`: Count unique values of a specified column.  
+- `check_overview()`: Provide an overview of datasets.\
+- `check_unique_value()`: Count unique values of a specified column.\
 - `get_dataset()`: Get full working datasets as a named list of
   [Dataset](https://arrow.apache.org/docs/r/reference/Dataset.html) R6
-  objects.  
+  objects.\
 - `recode_values()`: Recode values based on grouping logic.
 
 3.  Compute indices used in climate health research
 
 - Humidity variables: `cal_absolute_humidity()`,
   `cal_dewpoint_temperature()`, `cal_mixing_ratio()`,
-  `cal_relative_humidity()`, `cal_specific_humidity()`.  
+  `cal_relative_humidity()`, `cal_specific_humidity()`.\
 - Comfort indices: `cal_apparent_temperature()`, `cal_humidex()`,
-  `cal_temperature_humidity_index()`.  
+  `cal_temperature_humidity_index()`.\
 - `cal_saturation_vapor_pressure()`
 
 4.  Support visualization
