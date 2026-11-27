@@ -23,7 +23,7 @@
 ## Citation
 
 Source:
-[`DESCRIPTION`](https://github.com/le-huynh/chva.extras/blob/master/DESCRIPTION)
+[`DESCRIPTION`](https://github.com/le-huynh/chva.extras/blob/v0.1.1/DESCRIPTION)
 
 Le-Huynh T (2026). *chva.extras: Supplementary Tools for Climate and
 Health Research in VA*. R package version 0.0.0.9000,
