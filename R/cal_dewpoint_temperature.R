@@ -44,14 +44,14 @@
 #'
 cal_dewpoint_temperature <- function(rh, t, t_unit){
 
-        if (rh < 0 | rh > 100) (stop("`rh` value must be between 0% and 100%."))
+        if (any(rh < 0 | rh > 100, na.rm = TRUE)) (stop("`rh` value must be between 0% and 100%."))
 
         if (missing(t_unit)) (stop("Please provide `t_unit` with 'celsius', 'fahrenheit', or 'kelvin'."))
         if (t_unit == 'celsius') t <- t
         if (t_unit == 'kelvin') t <- weathermetrics::kelvin.to.celsius(t)
         if (t_unit == 'fahrenheit') t <- weathermetrics::fahrenheit.to.celsius(t)
 
-        es <- cal_saturation_vapor_pressure(t = t, t_unit = t_unit)
+        es <- cal_saturation_vapor_pressure(t = t, t_unit = "celsius")
         cal_term <- (es * rh) / 611
         td = (237.3 * log(cal_term)) / (7.5 * log(10) - log(cal_term))
 

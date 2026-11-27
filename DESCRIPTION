@@ -50,4 +50,7 @@ Depends:
 LazyData: true
 LazyDataCompression: xz
 Suggests: 
-    dlnm
+    dlnm,
+    testthat (>= 3.0.0),
+    withr
+Config/testthat/edition: 3

@@ -24,7 +24,7 @@ delete_csv <- function(folder_path,
 
         fs::dir_ls(path = folder_path) %>%
                 stringr::str_subset(pattern = pattern) %>%
-                fs::dir_ls(lob = "*.csv") %>%
+                fs::dir_ls(glob = "*.csv") %>%
                 purrr::map(fs::file_delete)
 
 }

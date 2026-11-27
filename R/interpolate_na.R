@@ -57,6 +57,11 @@ interpolate_na <- function(data,
                      "'. Each row must have a unique group identifier.")
         }
 
+        # original column names (excluding var1)
+        col_names <- data %>%
+                dplyr::select({{vars2}}) %>%
+                names()
+
         # Perform interpolation
         res <- data %>%
                 dplyr::select({{var1}}, {{vars2}}) %>%
@@ -66,8 +71,10 @@ interpolate_na <- function(data,
                                                       zoo::na.approx(na.rm = FALSE,
                                                                      maxgap = maxgap,
                                                                      rule = rule) %>%
+                                                      purrr::set_names(col_names) %>%
                                                       t() %>%
-                                                      tibble::as_tibble()}
+                                                      tibble::as_tibble(.name_repair = "unique")
+                                                      }
                                     )) %>%
                 tidyr::unnest(cols = c(approx)) %>%
                 dplyr::select(-data)
