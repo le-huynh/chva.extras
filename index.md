@@ -9,9 +9,10 @@ large datasets.
 
 Citation:
 
-``` R
-Le-Huynh, T.-L., Davis, R., Novicoff, W., & DeGuzman, P. (2025). chva.extras v0.1.0: Supplementary Tools for Climate and Health Research in Virginia (v0.1.0). Zenodo. https://doi.org/10.5281/zenodo.14910967
-```
+> Le-Huynh, T.-L., Davis, R. E., Novicoff, W. M., & DeGuzman, P. B.
+> (2025). chva.extras: Supplementary Tools for Climate and Health
+> Research in Virginia. Zenodo.
+> <https://doi.org/10.5281/zenodo.14910966>
 
 ## Installation
 
@@ -27,7 +28,7 @@ devtools::install_github("le-huynh/chva.extras")
 ```
 
 This package is also accessible for download via Zenodo DOI
-[10.5281/zenodo.14910967](https://doi.org/10.5281/zenodo.14910966).
+[10.5281/zenodo.14910966](https://doi.org/10.5281/zenodo.14910966).
 
 ### Functions
 
@@ -35,7 +36,7 @@ See [Package
 index](https://le-huynh.github.io/chva.extras/reference/index.html) for
 full list of functions.
 
-1.  Convert files to Parquet format
+1.  Convert files to Parquet format  
 
 - [`get_parquet_arrow()`](https://le-huynh.github.io/chva.extras/reference/get_parquet_arrow.md):
   Convert multiple files to Parquet format.  

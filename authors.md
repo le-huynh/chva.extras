@@ -23,16 +23,16 @@
 ## Citation
 
 Source:
-[`DESCRIPTION`](https://github.com/le-huynh/chva.extras/blob/v0.1.1/DESCRIPTION)
+[`DESCRIPTION`](https://github.com/le-huynh/chva.extras/blob/master/DESCRIPTION)
 
 Le-Huynh T (2026). *chva.extras: Supplementary Tools for Climate and
-Health Research in VA*. R package version 0.0.0.9000,
+Health Research in VA*. R package version 0.1.1,
 <https://github.com/le-huynh/chva.extras>.
 
     @Manual{,
       title = {chva.extras: Supplementary Tools for Climate and Health Research in VA},
       author = {Truc-Ly Le-Huynh},
       year = {2026},
-      note = {R package version 0.0.0.9000},
+      note = {R package version 0.1.1},
       url = {https://github.com/le-huynh/chva.extras},
     }
